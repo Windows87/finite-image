@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>Yuri Faria</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no">
+
+    <meta itemprop="name" content="Finite Image">
+    <meta name="description" content="Existem Infinitas ou Finitas Imagens? Que tal tentar a sorte?"/>
+    <meta name="language" content="PT">
+    <meta name="author" content="Yuri Faria, yuri.yurifaria@gmail.com">
+    <meta name="url" content="https://windows87.github.io/infinite-photo">
+
+    <meta property="og:title" content="Infinite Photo"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://windows87.github.io/infinite-photo"/>
+    <meta property="og:description" content="Existem Infinitas ou Finitas Imagens? Que tal tentar a sorte?"/>
+    <meta property="og:email" content="yuri.yurifaria@gmail.com"/>
+
+    <meta property="twitter:title" content="Infinite Photo" />
+    <meta property="twitter:description" content="Existem Infinitas ou Finitas Imagens? Que tal tentar a sorte?" />
+    <meta name="theme-color" content="#fff">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143577501-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143577501-2');
+</script>
+  </head>
+  <body>
+    <main>
+      <h1>Finite Image</h1>
+      <div id="canvas-container">
+        <canvas width="100" height="100"></canvas>
+        <button>Gerar Foto Aleatória</button>
+      </div>
+    </main>
+
+    <section>
+      <h2>Contexto</h2>
+      <p>Quantas fotos existem? Diria que infinitas? Mas, se fotos tem duas dimensões e essas duas dimensões não atingem valores infinitos, logo, existem fotos finitas. Podemos fazer um cálculo para saber quantas fotos existem com determinada resolução. Vamos pegar uma resolução 1280x720 (HD) colorida. Cada pixel dessa imagem pode variar suas tonalidades de vermelho, verde e azul (famoso RGB) de 0 a 255, ou seja, cada pixel pode ter \(256^{3}\) cores diferentes. E como existem 921600 pixels (\(1280*720\), há exatamente esse números de fotos diferentes para uma foto colorida em resolução 1280x720:</p>
+      <span class="center-latex">\(16777216^{921600}\)</span>
+      <p>A menos que você tenha um supercomputador (ou queira realmente descobrir), não saberemos exatamente o valor em digitos de \(16777216^{921600}\). Então, para simplificar, vamos tentar fazer apenas com uma resolução 100x100 (assim temos apenas 10000 pixels em uma foto) e utilizando somente a escala cinza (assim, um pixel pode assumir apenas 256 cores). Com isso, temos essa quantidade de fotos:</p>
+      <span class="center-latex">\(256^{10000}\)</span>
+      <p>Bem menor! Conseguimos até calcular usando Python. Isso dá um número de 24083 dígitos (você pode ver ele completo <a href="numero.html">clicando aqui</a>). Mas.. pra que raios isso é importante pra minha vida? Isso é tão importante quanto o Teorema do Macaco Infinito (ou seja, nenhuma importância).</p>
+      <p>Mas agora, se você não refletiu sobre isso (ou seja, você não é louco ou matemático), isso significa que nessas \(16777216^{921600}\) fotos existe uma foto sua que nunca existiu, uma foto do seu futuro filho, uma foto sua em um multiverso. Nessas \(16777216^{921600}\) fotos existem todos as selfies em resolução HD, existem fotos de aliens, existem fotos do multiverso 94939291010192938 em HD, existem fotos do início, do presente, do futuro, do que existe, do que não existe. Existem fotos de todas as obras de arte que existiram ou existirão (logo, a imaginação do homem é limitada, apesar de poder atingir perto do infinito).</p>
+      <p>Essas \(16777216^{921600}\) fotos podem representar TUDO EM HD menos que você tenham coisas realmente infinitas (conjuntos dos reais, pi, etc.). Quando mais você aumenta a resolução da foto (de 1280x720 pra 6400x6040), maiores coisas você conseguirá representar (mas como ninguém faz uma obra de arte com dimensões infinitas, há finitas obras de arte humanas, extraterrestres e no multiverso (há menos que exista algum que permita obras de artes com dimensões infinitas, aí já estamos viajando demais)).</p>
+      <p>O botão acima gera uma imagem gera uma imagem 100x100 em cinza aleatória, logo, você pode ter a sorte (baita e extrema sorte) de aparecer sua foto, a foto de seu amigo, do seu futuro filho, de alguém do Japão ou de um Pokémon. Mas se aparecer algo como isso, parabéns, você gastou a sorte de toda a sua vida (e todas as infinitas reencarnações) com isso.</p>
+      <p>Desenvolvido e escrito por <a href="https://windows87.github.io/pt/">Yuri Faria</a>. Desenvolvedor? Acesse o <a href="https://github.com/Windows87/finite-image">Repositório no Github</a>.</p>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
